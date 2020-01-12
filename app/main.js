@@ -1,5 +1,6 @@
-const producer = require('./producer');
-const consumer = require('./consumer');
+const producer = require('./producer')
+const consumer = require('./consumer')
 
-producer.runProducer;
-consumer.runConsumer;
+producer.run()
+setTimeout(() => consumer.run(), 500)
+// consumer.run()
