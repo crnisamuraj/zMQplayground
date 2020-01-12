@@ -1,6 +1,6 @@
 const producer = require('./modules/producer')
 const consumer = require('./modules/consumer')
 
-producer.run()
-setTimeout(() => consumer.run(), 500)
-// consumer.run()
+producer.run(1)
+consumer.run(1)
+setTimeout(() => consumer.run(2), 5000)
